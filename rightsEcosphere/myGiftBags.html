@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>选择礼包</title>
+    <script type="text/javascript">var noLogin = true;</script>
+    <script type="text/javascript" src="../dreamSharePartner/static/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../dreamSharePartner/dist/head.js"></script>
+	<link type="text/css" rel="stylesheet" media="all" href="../rightsEcosphere/css/myGiftBags.css" />
+	<script type="text/javascript" src="../rightsEcosphere/js/myGiftBags.js"></script>
+</head>
+<body>
+	<div class="gift-bags">
+		<div class="banner">
+			<img class="bck" src="img/giftBagsBanner.png">
+			<div class="tab"></div>
+		</div>
+		<div class="content"></div>
+	</div>
+	<div id="loginDialog" class="c-dialog c-login-dialog">
+		<div class="dialog-bg"></div>
+		<div class="con">
+			<div class="dialog-body">
+				<div class="inputS">
+					<div class="c-row clearfix " >
+						<span class="c-label"><img src="img/phoneImg.png"></span>
+						<div class="info">
+							<span><input id="phone_num" onkeyup="this.value=this.value.replace(/\D/gi,'')" type="text"  placeholder="手机号"></span>
+						</div>
+					</div>
+					<div class="cut-line"><div class="cut-line-content"></div></div>
+					<div class="c-row clearfix " >
+						<span class="c-label"><img src="img/phoneCodeImg.png"></span>
+						<div class="info">
+							<span>
+								<input id="phone_code"  type="text" maxlength="6" onkeyup="this.value=this.value.replace(/\D/gi,'')" onblur="this.value=this.value.replace(/\D/gi,'')"placeholder="短信验证码">
+							</span>
+							<a href="javascript:void(0);" class="get-check-code" onclick="getCode(this)">获取验证码</a>
+						</div>
+					</div>
+					<div class="cut-line"><div class="cut-line-content"></div></div>
+					<div class="c-row clearfix ">
+			        	<span class="c-label"><img src="img/graphCodeImg.png"></span>
+						<div class="info">
+							<span><input id="graph_code" type="text" maxlength="4" placeholder="图形验证码"></span>
+							<div id="verificationCode" class="verificationCode" style="float: left">
+		                        <canvas width="100%" height="44" id="verifyCanvas" style="display: none;"></canvas>
+		                        <img id="code_img" src="" onclick="resetCode()"/>
+		                    </div>
+						</div>
+					</div>
+					<div class="cut-line"><div class="cut-line-content"></div></div>
+					<div class="do-btn-div" onclick="doLogin()"><img class="doAcceptImg" src="img/doLogin.png" /></div>
+				</div>
+			</div>
+			<div class="dialog-btns">
+				<div class="btn btn-1 center" onclick="dialogHide($(this).parents('.c-dialog'))">
+					<img src="img/icon_close_circle.png">
+				</div>
+			</div>
+			<img class="con-bg-img" src="img/dialog_bg_rule.png">
+		</div>
+	</div>
+</body>
+</html>

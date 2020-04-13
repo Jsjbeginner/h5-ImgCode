@@ -1,0 +1,259 @@
+html, body{
+	height: auto;
+}
+.gift-bags{
+	width: 100%;
+}
+.gift-bags .banner{
+	width: 100%;
+	height: 12rem;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+.gift-bags .banner .bck{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+}
+.gift-bags .banner .title{
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	padding-top: 4rem;
+}
+.gift-bags .banner .tab{
+	width: 70%;
+	margin: 2rem auto auto;
+	height: 3.2rem;
+	background-color: #fff;
+	border-radius: 3rem;
+}
+.gift-bags .banner .tab .head-item{
+	width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    border-radius: 4rem;
+    border: 1px solid #2a0438;
+}
+.gift-bags .banner .tab .head-item .item {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0rem;
+    border-radius: 2.2rem;
+}
+.gift-bags .banner .tab .head-item .item span{
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	color: #410e4b;
+}
+.gift-bags .banner .tab .head-item .item.on {
+	background-image: linear-gradient(#4e1155, #4e1155);
+}
+.gift-bags .banner .tab .head-item .item.on span{
+	color: #fff;
+}
+.gift-bags .banner .tab .head-item .item .product-name{
+	color: #5e5e5e;
+}
+.gift-bags .content{
+	width: 100%;
+	min-height: calc(100vh - 12rem);
+	padding: 2rem 1.5rem;
+	margin-top: 12rem;
+}
+.gift-bags .content .item {
+	box-shadow: -2px 2px 7px 2px #eaeaea;
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 8rem;
+	position: relative;
+	width: 100%;
+}
+.gift-bags .content .item .page-img{
+	width: 5rem;
+	height: 5rem;
+	margin-left: 1rem;
+}
+.gift-bags .content .item .page-img img{
+	width: 100%;
+	height: 100%;
+}
+.gift-bags .content .item .page-content{
+	width: calc(100% - 14rem);
+	min-height: 8rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: self-start;
+	justify-content: space-between;
+	color: #3d3237;
+}
+.gift-bags .content .item .page-content .name{
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+}
+.gift-bags .content .item .page-content .txt{
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	color: #cccccc;
+	padding: .8rem 0 1rem;
+}
+.gift-bags .content .item .page-content .ticket{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
+}
+.gift-bags .content .item .page-content .ticket .ticket-item{
+	position: relative;
+	width: 48%;
+	height: 1.8rem;
+	margin-bottom: .2rem;
+}
+.ticket .ticket-item .ticket-item-icon{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+.ticket .ticket-item .ticket-item-txt{
+	color: #fff;
+	padding-left: 2.4rem;
+	font-size: 1rem;
+	line-height: 1.8rem;
+}
+.ticket .ticket-item .ticket-item-icon img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.gift-bags .content .item .page-content .ticket span{
+	padding-bottom: .5rem;
+}
+.gift-bags .content .item .page-btn{
+	width: 8rem;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: #fff;
+	background: url("../img/pageBtnBcl.png")no-repeat center;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 0;
+}
+.gift-bags .content .item .page-btn.dis {
+	color: #cccccc;
+}
+.gift-bags .content .item .page-btn .btn{
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+}
+.gift-bags .content .item .page-btn .btn .btn2{
+	padding-left: .5rem;
+}
+.gift-bags .content .item .page-btn .num{
+	color: #a942bd;
+	position: absolute;
+	bottom: .4rem;
+}
+
+
+
+
+/* 弹出框 */
+.c-dialog{
+	position: absolute;
+	z-index: 88;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.c-dialog .dialog-bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000;
+	z-index: -6;
+	opacity: 0.8;
+}
+.c-dialog .con{
+	width: 100%;
+	height: calc(50% + 6rem);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: none;
+	border-radius: 6px;
+	padding: 0.1rem 0.1rem;
+	z-index: -4;
+	border:none;
+}
+.c-dialog .dialog-body{
+	width: 70%;
+	height: calc(100% - 14rem);
+	overflow: auto;
+	margin: 12rem auto auto;
+	color: #ffffff;
+}
+.c-dialog .dialog-btns{
+	position: absolute;
+	bottom: -6rem;
+	width: 3rem;
+	height: 3rem;
+	left: calc(50% - 1.5rem);
+}
+.c-dialog .dialog-btns .btn{
+	width: 100%;
+	height: 100%;
+}
+.c-dialog .dialog-btns .btn img{
+	width: 100%;
+	height: 100%;
+}
+.c-dialog .con .con-bg-img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.c-login-dialog .con{
+	height: 26rem;/*采用固定高度，防止安卓软键盘弹出导致body压缩，挤压弹出框*/
+}
+.c-login-dialog .dialog-body{
+	width: 80%;
+	height: 100%;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 2rem;
+}
+.c-login-dialog .con .con-bg-img{
+	display: none;
+}
+
+.c-login-dialog .dialog-body .inputS{
+	width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+}
