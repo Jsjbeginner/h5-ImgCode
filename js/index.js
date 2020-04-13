@@ -1,6 +1,6 @@
 var dreamId = "";//手机号
 /**
-* 登录-注销
+* 登录
 */
 function login(){
 	$("#phone_num").val("");
