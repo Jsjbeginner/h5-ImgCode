@@ -1,60 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>权益生态圈1</title>
+    <title>H5图形验证码</title>
     <script type="text/javascript">var noLogin = true;</script>
-    <script type="text/javascript" src="../dreamSharePartner/static/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="../dreamSharePartner/dist/head.js"></script>
 	<link type="text/css" rel="stylesheet" media="all" href="../rightsEcosphere/css/index.css" />
 	<script type="text/javascript" src="../rightsEcosphere/js/index.js"></script>
 	<script type="text/javascript" src="../rightsEcosphere/js/varCode.js"></script>
 	<script type="text/javascript" src="../rightsEcosphere/js/md5.js"></script>
 </head>
 <body>
-	<div class="shop">
-		<div class="banner">
-			<img id="banner" src=""/>
-		</div>
-		<div class="tag rule" onclick="lookRule()">
-			<span>活动规则</span>
-		</div>
-		<div class="tag my-order" onclick="myOrder()" >
-			<span>我的订单</span>
-		</div>
-		<div class="content">
-			<div class="button">
-				<div class="info">
-					<span class="phone" id="phone">***********</span>
-					<a href="javascript:login();">登录</a>
-				</div>
-				<div class="tab"></div>
-				<div class="do-next" onclick="doNext()">立即申请加入</div>
-				<div class="btn">
-					<div class="my-gift" onclick="myGiftBags()">我的礼包</div>
-					<div class="share">
-						<div class="share-logo"><img src="img/shareLogo.png"/></div>
-						<div class="share-opt" onclick="showShare()">分享</div>
-					</div>
-				</div>
-				<div class="txt">移动&nbsp&nbsp电信&nbsp&nbsp手机号均可办理</div>
-			</div>
-			<div class="information">
-				<img id="information" src=""/>
-			</div>
-		</div>
-	</div>
-	<div id="acRuleDialog" class="c-dialog c-rule-dialog">
-		<div class="dialog-bg"></div>
-		<div class="con">
-			<div class="dialog-body"></div>
-			<div class="dialog-btns">
-				<div class="btn btn-1 center" onclick="dialogHide($(this).parents('.c-dialog'))">
-					<img src="img/icon_close_circle.png">
-				</div>
-			</div>
-			<img class="con-bg-img" src="img/dialog_bg_rule.png">
-		</div>
-	</div>
 	<div id="loginDialog" class="c-dialog c-login-dialog">
 		<div class="dialog-bg"></div>
 		<div class="con">
@@ -99,10 +53,5 @@
 			<img class="con-bg-img" src="img/dialog_bg_rule.png">
 		</div>
 	</div>
-	<div class="shareFollowDiv" onclick="hideShare()">
-    	<div class="shareFollowBg"></div>
-    	<img class="followHand" src="../dreamSharePartner/image/shareFollow.png">
-    	<div class="followText">分享给好友</div>
-    </div>
 </body>
 </html>
