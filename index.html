@@ -3,12 +3,17 @@
 <head>
     <title>H5图形验证码</title>
     <script type="text/javascript">var noLogin = true;</script>
-	<link type="text/css" rel="stylesheet" media="all" href="../rightsEcosphere/css/index.css" />
-	<script type="text/javascript" src="../rightsEcosphere/js/index.js"></script>
-	<script type="text/javascript" src="../rightsEcosphere/js/varCode.js"></script>
-	<script type="text/javascript" src="../rightsEcosphere/js/md5.js"></script>
+    <script type="text/javascript" src="static/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="dist/head.js"></script>
+	<link type="text/css" rel="stylesheet" media="all" href="css/index.css" />
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/varCode.js"></script>
+	<script type="text/javascript" src="js/md5.js"></script>
 </head>
 <body>
+	<div style="height: 100vh;width: 100%;display: flex;justify-content: center;align-items: center;">
+		<div onclick="login()" class="login">登陆</div>
+	</div>
 	<div id="loginDialog" class="c-dialog c-login-dialog">
 		<div class="dialog-bg"></div>
 		<div class="con">
@@ -50,7 +55,6 @@
 					<img src="img/icon_close_circle.png">
 				</div>
 			</div>
-			<img class="con-bg-img" src="img/dialog_bg_rule.png">
 		</div>
 	</div>
 </body>

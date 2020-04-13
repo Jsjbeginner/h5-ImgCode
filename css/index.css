@@ -1,3 +1,15 @@
+html{
+    font-size: 30px;
+}
+.login {
+    height: 150px;
+    width: 300px;
+    background-color: #02c6d8;
+    border-radius: 30px;
+    color: #2b26ff;
+    text-align: center;
+    line-height: 150px;
+}
 /* 弹出框 */
 .c-dialog{
 	position: absolute;
@@ -62,7 +74,7 @@
 	z-index: -1;
 }
 .c-login-dialog .con{
-	height: 26rem;/*采用固定高度，防止安卓软键盘弹出导致body压缩，挤压弹出框*/
+	height: 30rem;/*采用固定高度，防止安卓软键盘弹出导致body压缩，挤压弹出框*/
 }
 .c-login-dialog .dialog-body{
 	width: 80%;
